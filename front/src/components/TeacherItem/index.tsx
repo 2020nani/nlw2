@@ -1,0 +1,32 @@
+import React from 'react';
+
+import whatsappIcon from '../../assets/images/icons/whatsapp.svg'
+import './styles.css'
+function TeacherItem() {
+    return (
+        <article className="teacher-item">
+            <header>
+                <img src="data:image/jpeg;base64,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" alt="prof" />
+                <div>
+                    <strong>hernani</strong>
+                    <span>engenharia</span>
+                </div>
+            </header>
+            <p>
+                esse e o cara
+                    </p>
+            <footer>
+                <p>
+                    PRECO/HORA
+                          <strong>R$ 80,00</strong>
+                </p>
+                <button type="button">
+                    <img src={whatsappIcon} alt="whats" />
+                            Entrar em contato
+                        </button>
+            </footer>
+
+        </article>
+    )
+}
+export default TeacherItem;
